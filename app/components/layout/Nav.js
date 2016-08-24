@@ -4,7 +4,7 @@ import { Link } from "react-router";
 export default class Nav extends React.Component {
   render(){
     const navInfo = {
-      backgroundColor: "#272E3A",
+      backgroundColor: "#0F439B",
       width: "100vw",
       height: "7vh"
     };
