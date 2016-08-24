@@ -7,11 +7,14 @@ import Nav from "../components/layout/Nav";
 export default class Layout extends React.Component {
   render(){
     const { location } = this.props;
+    const titleStyle = {
+      marginTop: "60px",
+      color: "#fff"
+    };
     return(
     <div>
         <Nav location={location} />
       <div>
-        <h1>Layout Is where I belong.</h1>
           {this.props.children}
         <Link to="routing">routing</Link>
       </div>

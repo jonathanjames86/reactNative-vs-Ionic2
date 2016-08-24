@@ -5,7 +5,8 @@ export default class Footer extends React.Component {
   render() {
     return (
       <footer>
-            <p>Copyright &copy; KillerNews.net</p>
+            <h1>FOOTER</h1>
+            <p>Copyright &copy; React Native vs Ionic2</p>
       </footer>
     );
   }

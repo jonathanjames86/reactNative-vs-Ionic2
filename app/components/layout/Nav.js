@@ -3,12 +3,16 @@ import { Link } from "react-router";
 
 export default class Nav extends React.Component {
   render(){
+    const navInfo = {
+      backgroundColor: "#4686F0",
+      width: "100vw",
+      height: "10vh"
+    };
     return(
     <div>
-      <div className="headerInfo">
-          <h1>NAV/MENU</h1>
+      <div style={navInfo}>
+          HOME/DATA/RESOURCES
       </div>
-      <h1>This will be the NAV</h1>
       {this.props.children}
     </div>
     );
