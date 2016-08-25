@@ -6,13 +6,14 @@ export default class Home extends React.Component {
   render(){
     const headerContainer = {width: "100vw",height: "75vh",backgroundColor: "#4D8DF6", display:"flex"};
     const headerText = {width: "50%", height: "65%", fontSize: "2rem",color: "#fff", textAlign: "center", paddingTop: "25vh"};
-    const btn = {width: "6rem"};
+    const btn = {width: "10rem", height:"3rem", margin:"1rem",backgroundColor:"#fff", color:"#4D8DF6", border:"1px solid #fff", fontSize: "1.25rem"};
+    const btn2 = {width: "10rem", height:"3rem", backgroundColor:"#4D8DF6", color:"#fff", border:"1px solid #fff", fontSize: "1rem"};
     const headerImage = {width:"50%", height:"100%", backgroundImage: "url('http://www.mobiloitte.com/blog/wp-content/uploads/2016/07/ionic-vs-react-native.png')", backgroundSize: "cover", backgroundPosition: "center"};
     const forward = {width: '70vw',height:'100%', margin: "auto", marginTop:"5rem", marginBottom:"6rem",backgroundColor: "#fff", display:"flex", borderBottom:".85rem solid #0F439B"};
     const avatarContainer = {width: "15%", height:"100%", display:"flex", flexWrap: "wrap", justifyContent: "center", marginRight: "2rem", marginTop: "1rem"};
     const avatar = { width: "7rem", height: "7rem", backgroundImage:"url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAfNAAAAJDhjOTNjYjM2LWFhYmEtNGYzMC1hNWFiLWU3ODg3NGJhMzlkMQ.jpg')", backgroundSize: "cover", borderRadius: "50%"};
     const preface = {width: "75%", height:"100%", marginBottom:"5rem"};
-    const secText = {fontSize: "1rem", marginTop: "1rem"};
+    const secText = {fontSize: "1rem", marginTop: "1rem", marginBottom:"2rem"};
     const techUsed = {width: '55vw',height: '100%', margin: "auto"};
     const techHead = {textAlign: "center", marginBottom: "3rem", fontSize: "2rem"};
     const techP = {fontSize: "1rem"};
@@ -37,12 +38,12 @@ export default class Home extends React.Component {
           Ionic 2 and React Native
           <br />
           <div style={secText}>
-            A two week out of the box experience and resource
+            A two week out of the box experience, resource and project
             <br />
-             A project by and for JR Developers
+             by and for JR Developers
             <br />
           </div>
-          <button>The Data</button> <button>Resources</button>
+          <button style={btn}>The Data</button> <button style={btn2}>Resources</button>
         </div>
         <div style={headerImage}>
         </div>
@@ -56,18 +57,16 @@ export default class Home extends React.Component {
         </div>
         <div style={preface}>
           <h2>Just a few things...</h2>
-          <br/>
-          Hey there and welcome! I am incredibly excited to share with you my experience over the past weeks learning the Ionic 2 and React Native frameworks. Whether you stumbled
-          upon this page out of curiosity, or looking to upgrade your skills and knowledge in JavaScript mobile development, know that the intention of this site is to save you time.
-          <br />
-          With that being said there are a few items I wish to address. I still consider myself a JR level Developer. Even so, I believe the hard yards I have put in, and the information
+          <p>Hey there and welcome! I am incredibly excited to share with you my experience over the past weeks learning the Ionic 2 and React Native frameworks. Whether you stumbled
+          upon this page out of curiosity, or looking to upgrade your skills and knowledge in JavaScript mobile development, know that the intention of this site is to save you time.</p>
+
+          <p>With that being said there are a few items I wish to address. I still consider myself a JR level Developer. Even so, I believe the hard yards I have put in, and the information
           I have collected will make for a great starting point. I know because I was there! And because I am relativley new to the platform, my language will be straightforward
           and direct. All the modules you find in this project will be based off of my personal experience. I will dive deep into my development
-          process with the Windows and Android platforms.(these frameworks work cross-platform) Languages, style-guides, and libraries studied. And the hours of docs I sorted through.
-          <br />
-          Lastly, understand that Ionic 2 is still in beta and React Native has only been around a year or so. There is undoubtly a bright future for these frameworks. The more I learn, the more
-          excited I get, and whatever future finds I discover to be helpful or advantageous will be shared here.
-          <br />
+          process with the Windows and Android platforms.(these frameworks work cross-platform) Languages, style-guides, and libraries studied. And the hours of docs I sorted through.</p>
+
+          <p>Lastly, understand that Ionic 2 is still in beta and React Native has only been around a year or so. There is undoubtly a bright future for these frameworks. The more I learn, the more
+          excited I get, and whatever future finds I discover to be helpful or advantageous will be shared here.</p>
           Enough Chat! How about we dive in? Starting with the languages and libraries we will be using in JavaScript Mobile Development.
         </div>
       </div>
@@ -75,7 +74,7 @@ export default class Home extends React.Component {
         <div style={techHead}>
           TECH USED
           <br />
-        <p style={techP}>A breakdown of the new languages I came across while working on this project. Check out the <Link to='layout'>resources</Link> page for more info</p>
+        <p style={techP}>A breakdown of the new languages I came across while working on this project. Check out the <Link to='resources'>resources</Link> page for more info</p>
         </div>
 
         <div style={techContainer}>
@@ -115,13 +114,13 @@ export default class Home extends React.Component {
           <div style={techInfo}>
             <h2 style={techTitle}>React</h2>
             Developed by Facebook. This is a JavaScript UI library that handles the View component in our Model-View-Controller software architecture. Written primarily in JSX, it forgoes the
-              the expensive approach of rebuilding the DOM on data changes. Instead it efficiently updates and renders the targeted components.
+             expensive approach of rebuilding the DOM on data changes. Instead it efficiently updates and renders the targeted components.
           </div>
         </div>
         <div style={techContainer}>
           <div style={techInfo}>
             <h2 style={techTitle}>React Native</h2>
-            Now we are getting into things! React Native can run embedded instances of the JavaScriptCore inside a native mobile enviroment. It allows us to write mobile apps in pure JavaScript in React! It utilizes
+            Now we are getting into things! React Native can run embedded instances of the JavaScriptCore inside a native mobile enviroment. It allows us to write mobile apps with pure JavaScript in React! It utilizes
             flexbox for layout, so there is no need to manually size your views in your app, which makes it easier to maintain and scale.
           </div>
           <div style={techRn}></div>

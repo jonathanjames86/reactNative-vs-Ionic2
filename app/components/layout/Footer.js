@@ -4,10 +4,9 @@ import React from "react";
 export default class Footer extends React.Component {
   render() {
     const footer = {
-      backgroundColor: "#2B3442",
+      backgroundColor: "#0F439B",
       height: "25vh",
-      width: "100vw",
-      padding:"2rem",
+      width: "100%",
       color:"#fff"
     }
     return (
