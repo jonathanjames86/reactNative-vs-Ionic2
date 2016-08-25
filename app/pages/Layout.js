@@ -16,7 +16,6 @@ export default class Layout extends React.Component {
         <Nav location={location} />
       <div>
           {this.props.children}
-        <Link to="routing">routing</Link>
       </div>
       <Footer/>
     </div>
