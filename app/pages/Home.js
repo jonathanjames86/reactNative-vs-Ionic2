@@ -8,7 +8,7 @@ export default class Home extends React.Component {
     const headerText = {width: "50%", height: "65%", fontSize: "2rem",color: "#fff", textAlign: "center", paddingTop: "25vh"};
     const btn = {width: "6rem"};
     const headerImage = {width:"50%", height:"100%", backgroundImage: "url('http://www.mobiloitte.com/blog/wp-content/uploads/2016/07/ionic-vs-react-native.png')", backgroundSize: "cover", backgroundPosition: "center"};
-    const forward = {width: '70vw',height:'100%', margin: "auto", marginTop:"5rem", marginBottom:"6rem",backgroundColor: "#fff", display:"flex", borderBottom:"1rem solid #0F439B"};
+    const forward = {width: '70vw',height:'100%', margin: "auto", marginTop:"5rem", marginBottom:"6rem",backgroundColor: "#fff", display:"flex", borderBottom:".85rem solid #0F439B"};
     const avatarContainer = {width: "15%", height:"100%", display:"flex", flexWrap: "wrap", justifyContent: "center", marginRight: "2rem", marginTop: "1rem"};
     const avatar = { width: "7rem", height: "7rem", backgroundImage:"url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAfNAAAAJDhjOTNjYjM2LWFhYmEtNGYzMC1hNWFiLWU3ODg3NGJhMzlkMQ.jpg')", backgroundSize: "cover", borderRadius: "50%"};
     const preface = {width: "75%", height:"100%", marginBottom:"5rem"};
@@ -27,7 +27,8 @@ export default class Home extends React.Component {
     const techInative = {width:"40%", height:"100%", backgroundImage: "url('http://ionicframework.com/present-ionic/slides/img/native-icon.png')",backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "center"};
     const techEs6 = {width:"40%", height:"100%", backgroundImage: "url('https://codereviewvideos.com/blog/wp-content/uploads/2016/04/es6-logo.png')",backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "center"};
     const techWebP = {width:"40%", height:"100%", backgroundImage: "url('https://s3.amazonaws.com/media-p.slid.es/uploads/20204/images/1644253/webpack.png')",backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "center"};
-
+    const footerNav = {width: "100%", height:"25vh", backgroundColor:"#EBF0F6", display:"flex", alignItems:"center"};
+    const footNavCont = {width:"50%", height:"60%", borderRight:"1px solid #858F9F"};
     const techInfo = {width:"40%", height:"100%"};
     return(
     <div>
@@ -148,6 +149,10 @@ export default class Home extends React.Component {
             </div>
         </div>
 
+      </div>
+      <div style={footerNav}>
+        <div style={footNavCont}></div>
+        <div></div>
 
       </div>
 

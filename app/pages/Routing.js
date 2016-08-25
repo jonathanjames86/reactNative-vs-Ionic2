@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router";
 
-export default class Routing extends React.Component {
+export default class Data extends React.Component {
   render(){
     return(
     <div>

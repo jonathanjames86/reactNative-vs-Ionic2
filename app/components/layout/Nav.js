@@ -5,13 +5,15 @@ export default class Nav extends React.Component {
   render(){
     const navInfo = {
       backgroundColor: "hsla(0, 0%, 0%, 0.4)",
-      width: "100vw",
+      width: "100%",
       height: "7vh",
       display: "flex",
+      justifyContent: "flex-end",
       position:"absolute",
       zIndex: "10"
+
     };
-    const menuItems = {color:"white", fontSize:".85rem", textDecoration:"none", height:"100%", width: "8rem", display: "flex", justifyContent: "center", alignItems:"center"};
+    const menuItems = {color:"white", fontSize:".85rem", textDecoration:"none", height:"100%", width: "4rem", marginRight:"4rem", display: "flex", justifyContent: "center", alignItems:"center"};
     return(
     <div>
       <div style={navInfo}>
@@ -19,7 +21,7 @@ export default class Nav extends React.Component {
           <IndexLink style={menuItems} to="/"> Home </IndexLink>
         </div>
         <div style={menuItems}>
-        <Link style={menuItems} to="routing"> Routing </Link>
+        <Link style={menuItems} to="data"> Data </Link>
         </div>
         <div style={menuItems}>
         <Link style={menuItems} to="layout"> Layout </Link>
