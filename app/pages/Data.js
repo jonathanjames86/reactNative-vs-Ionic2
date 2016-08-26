@@ -19,7 +19,7 @@ export default class Data extends React.Component {
       </div>
       <div style={demoContainer}>
         <div style={videoDemo}>
-          <ReactPlayer url='https://www.youtube.com/watch?v=HfbtLoAQ6HY' playing />
+          <ReactPlayer url='https://www.youtube.com/watch?v=juWhxCz1Wmg' playing />
         </div>
         <div style={demoText}>
           Here is your demo action so dont worry about the comparison
