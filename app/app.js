@@ -2,10 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route, IndexRoute, hashHistory, Link } from "react-router"
 
-import Layout from "./pages/Layout";
 import Data from "./pages/Data";
-import Home from "./pages/Home";
-import Resources from "./pages/Resources";
+import Home from "./pages/Home/Home";
+import Layout from "./pages/Layout";
+import Resources from "./pages/Resources/Resources";
 
 
 

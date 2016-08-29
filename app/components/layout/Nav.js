@@ -4,31 +4,30 @@ import { IndexLink,Link } from "react-router";
 export default class Nav extends React.Component {
   render(){
     const navInfo = {
-      backgroundColor: "hsla(0, 0%, 0%, 0.3)",
+      backgroundColor: "hsla(0, 0%, 0%, 0.5)",
       width: "100%",
       height: "3rem",
       display: "flex",
       justifyContent: "center",
       position:"absolute",
       zIndex: "10",
-
     };
-    const menuItems = {color:"white", fontSize:"1.25rem", textDecoration:"none", height:"100%", width: "4rem", marginRight:"4rem", display: "flex", justifyContent: "center", alignItems:"center"};
-    const headerImage = {height:"3rem", width:"75%", display:"flex", color:"#fff", fontSize:"1.25rem", alignItems:"center"};
-    const navContainer = {height: "100%", width:"65%", margin:"auto",display:"flex", justifyContent:"space-between"}
+    const menuItems = {color:"white", fontSize:"1.25rem", textDecoration:"none", height:"100%", width: "8rem", display: "flex", justifyContent: "center", alignItems:"center"};
+    const headerImage = {filter:"blur", height:"3rem", width:"8rem", display:"flex", color:"#fff",  marginRight:"30rem", fontSize:"1.65rem", justifyContent:"center", alignItems:"center",  backgroundImage:"url('https://cdn-images-1.medium.com/max/500/1*c42evQ2JXzdIJS9vs-5GsQ.png')", backgroundColor: "hsla(0, 0%, 0%, 0.5)", backgroundBlendMode:"overlay", backgroundSize:"contain",backgroundRepeat:"no-repeat"};
+    const navContainer = {height: "100%",  width:"65%", margin:"auto",display:"flex", justifyContent:"space-between"};
     return(
     <div>
         <div style={navInfo}>
           <div style={navContainer}>
-            <div style={headerImage}><img src={'https://cdn-images-1.medium.com/max/500/1*c42evQ2JXzdIJS9vs-5GsQ.png'} className="headerImg"/>I<sub className="sup">2</sub>&nbsp; vs RN</div>
-              <div style={menuItems}>
-                <IndexLink style={menuItems} to="/"> Home </IndexLink>
+            <div className="HeaderImage" style={headerImage}><div>I<sub className="sup">2</sub>&nbsp; vs RN</div></div>
+              <div className="menuNav"  style={menuItems}>
+                <IndexLink style={menuItems} activeClassName="activeMenu" to="/"> Home </IndexLink>
               </div>
-              <div style={menuItems}>
-              <Link style={menuItems} to="data"> Data </Link>
+              <div className="menuNav" style={menuItems}>
+                <Link activeClassName="activeMenu" style={menuItems} to="data"> My Project </Link>
               </div>
-              <div style={menuItems}>
-              <Link style={menuItems} to="resources"> Resources </Link>
+              <div className="menuNav" style={menuItems}>
+              <Link activeClassName="activeMenu" style={menuItems} to="resources"> Resources </Link>
               </div>
             </div>
         </div>

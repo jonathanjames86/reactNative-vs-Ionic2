@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { Router, Route, IndexRoute, hashHistory} from "react-router";
 import Layout from "./Layout";
 import Data from "./Data";
-import Home from "./Home";
+
 
 
 
