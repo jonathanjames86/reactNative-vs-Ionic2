@@ -37,6 +37,9 @@ background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+.fff{
+  color: #fff;
+}
 .menuNav:hover{
   border-bottom: 3px solid #fff;
 }

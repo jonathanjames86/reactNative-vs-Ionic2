@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Router, Route, IndexRoute, hashHistory, Link } from "react-router"
+import { Router, Route, IndexRoute, hashHistory, Link } from "react-router";
 
 import Data from "./pages/Data";
 import Home from "./pages/Home/Home";
@@ -17,7 +17,6 @@ ReactDOM.render(
         <Route path="home" component={Home}></Route>
         <Route path="resources" component={Resources}></Route>
         <Route path="layout" component={Layout}></Route>
-
     </Route>
   </Router>,
   document.getElementById('main'));

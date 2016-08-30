@@ -9,7 +9,7 @@ export default class ReactNative extends React.Component{
     const  resourceTitle = {width:"100%", height:"5rem", display:"flex", alignItems:"center", fontSize:"3rem", marginBottom: ""};
     const resourceInfo = {fontSize: "1.75rem", width:"65%", margin:"auto", color:"#fff"};
     const imgSrc = {maxHeight:"5rem", maxWidth:"5rem"}
-    const resourceText = {padding:"2rem", width:"85%", margin:'auto'}
+    const resourceText = {padding:"2rem", width:"85%", margin:'auto', marginBottom:"1rem", backgroundColor:"#EBF0F6"}
 
     return(
       <div style={resourceBody}>

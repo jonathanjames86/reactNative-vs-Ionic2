@@ -8,7 +8,7 @@ import Ionic2 from './Ionic2';
 export default class Resources extends React.Component{
 
   render(){
-    const resourcesHead = {width:"100%", height:"25vh", backgroundColor: "#4D8DF6", display:"flex", alignItems:"center"};
+    const resourcesHead = {width:"100%", height:"20rem", backgroundColor: "#4D8DF6", display:"flex", alignItems:"center"};
     const resourceBody = {width:"65%", height:"45vh", padding:"4rem", margin: "auto", backgroundColor:"#fff"};
     const  resourceTitle = {width:"100%", height:"5rem", display:"flex", alignItems:"center", fontSize:"3rem", marginBottom: ""};
     const resourceInfo = {fontSize: "1.75rem", width:"65%", margin:"auto", color:"#fff"};
@@ -19,9 +19,9 @@ export default class Resources extends React.Component{
       <div>
         <div style={resourcesHead}>
           <div style={resourceInfo}>
-            Resources
-              <div style={headerText}>An overview of my project and the docs that were most helpful.
-                <br/>Feel free to checkout out the code <Link to="resources">Here</Link>
+            <p>Resources</p>
+              <div style={headerText}>An overview of my project and the docs that were most helpful. Also a basic walkthrough and set up.
+                <br/>Feel free to checkout out the code <a className="fff" href="https://github.com/jonathanjames86/reactSite">Here</a>
                </div>
                 <code>   </code>
 

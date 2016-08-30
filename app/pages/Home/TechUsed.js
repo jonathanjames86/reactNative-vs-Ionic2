@@ -52,7 +52,7 @@ export default class TechUsed extends React.Component{
               <div style={techWebP}></div>
               <div style={techInfo}>
                 <h2 style={techTitle}>WebPack</h2>
-                  Webpack is in essence a modile bundler. Think of it as Gulp, but specifically for large web apps. What the official doucmentation points out that for
+                  Webpack is in essence a module bundler. Think of it as a Gulp, but specifically for large web apps. What the official doucmentation points out is for
                     big web apps "it’s not efficient to put all code into a single file, especially if some blocks of code are only required under some circumstances". So Webpack
                     simply compiles your code into "fragments" which fits better with modularization. This makes it optimal for running libraries like React.
               </div>
