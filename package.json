@@ -29,6 +29,7 @@
     "react-player": "^0.9.0",
     "react-router": "^2.4.0",
     "restify": "^4.0.4",
+    "socket.io-react": "^1.0.0",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.15.0"
   },

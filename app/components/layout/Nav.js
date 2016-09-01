@@ -27,7 +27,7 @@ export default class Nav extends React.Component {
                 <Link activeClassName="activeMenu" style={menuItems} to="data"> My Project </Link>
               </div>
               <div className="menuNav" style={menuItems}>
-              <Link activeClassName="activeMenu" style={menuItems} to="resources"> Resources </Link>
+              <Link activeClassName="activeMenu" style={menuItems} to="resources/:"> Resources </Link>
               </div>
             </div>
         </div>

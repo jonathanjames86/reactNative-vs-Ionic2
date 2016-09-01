@@ -13,8 +13,9 @@ export default class Resources extends React.Component{
     const  resourceTitle = {width:"100%", height:"5rem", display:"flex", alignItems:"center", fontSize:"3rem", marginBottom: ""};
     const resourceInfo = {fontSize: "1.75rem", width:"65%", margin:"auto", color:"#fff"};
     const headerText = {fontSize:"1.25rem", color:"#9DC1F6"};
-    const resourceText = {padding:"2rem", width:"85%", margin:'auto'}
-    const imgSrc = {maxHeight:"5rem", maxWidth:"5rem"}
+    const resourceText = {padding:"2rem", width:"85%", margin:'auto'};
+    const imgSrc = {maxHeight:"5rem", maxWidth:"5rem"};
+    
     return(
       <div>
         <div style={resourcesHead}>
@@ -27,14 +28,13 @@ export default class Resources extends React.Component{
 
           </div>
         </div>
-
-        <ReactIntro />
-
-        <ReactNative />
-
-        <Angular2 />
-
-        <Ionic2 />
+        <div>
+          <Link to="resources/react">React</Link>
+          <Link to="resources/reactNative">React Native</Link>
+          <Link to="resources/ionic">Ionic 2</Link>
+          <Link to="resources/angular">Angular</Link>
+        </div>
+          {this.props.children}
 
       </div>
     );
