@@ -4,6 +4,8 @@ import ReactIntro from './ReactIntro';
 import ReactNative from './ReactNative';
 import Angular2 from './Angular2Intro';
 import Ionic2 from './Ionic2';
+import { socketConnect } from 'socket.io-react';
+
 
 export default class Resources extends React.Component{
 
@@ -15,7 +17,9 @@ export default class Resources extends React.Component{
     const headerText = {fontSize:"1.25rem", color:"#9DC1F6"};
     const resourceText = {padding:"2rem", width:"85%", margin:'auto'};
     const imgSrc = {maxHeight:"5rem", maxWidth:"5rem"};
-    
+
+
+
     return(
       <div>
         <div style={resourcesHead}>
@@ -29,6 +33,7 @@ export default class Resources extends React.Component{
           </div>
         </div>
         <div>
+
           <Link to="resources/react">React</Link>
           <Link to="resources/reactNative">React Native</Link>
           <Link to="resources/ionic">Ionic 2</Link>
@@ -39,9 +44,6 @@ export default class Resources extends React.Component{
       </div>
     );
 
-
   }
-
-
 
 }

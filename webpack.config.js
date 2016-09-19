@@ -4,8 +4,8 @@ var webpack = require('webpack');
 module.exports = {
   context: path.join(__dirname, 'app'),
   entry: {
-    javascript: './app.js',
-    html: './index.html'
+    javascript: './client/app.js',
+    html: './client/index.html'
   },
   output: {
     path: path.join(__dirname, 'dist'),

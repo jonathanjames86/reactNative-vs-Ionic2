@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Router, Route, IndexRoute, hashHistory, Link } from "react-router";
+import { SocketProvider } from 'socket.io-react';
+import io from 'socket.io-client';
 
 import Data from "./pages/Data";
 import Home from "./pages/Home/Home";

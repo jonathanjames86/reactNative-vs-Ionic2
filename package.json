@@ -28,6 +28,7 @@
     "react-dom": "^15.3.1",
     "react-player": "^0.9.0",
     "react-router": "^2.4.0",
+    "react-socket": "^0.1.4",
     "restify": "^4.0.4",
     "socket.io-react": "^1.0.0",
     "webpack": "^1.12.9",

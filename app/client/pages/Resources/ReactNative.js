@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router";
+import Chat from './Chat.js';
 
 export default class ReactNative extends React.Component{
 
@@ -13,6 +14,7 @@ export default class ReactNative extends React.Component{
 
     return(
       <div style={resourceBody}>
+        <Chat />
         <div style={resourceTitle}><img style={imgSrc} src={'https://s3.amazonaws.com/media-p.slid.es/uploads/118447/images/1603781/reactNe.png'} className="img-responsive"/>React Native</div>
       </div>
 
